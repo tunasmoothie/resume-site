@@ -1,0 +1,57 @@
+.background {
+  background-image: url('./resources/background.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: black;
+  min-height: 100vh;
+  margin: 0px;
+}
+
+.sidebar {
+  color: white;
+  background-color: lightblue;
+  opacity: 0.9;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  float: right;
+  transform: translateY(30vh);
+  width: 60px;
+  height: 250px;
+  margin: auto;
+}
+
+.block {
+  background-color: grey;
+  margin: 30px;
+  height: auto;
+}
+
+.header {
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  color: white;
+}
+
+.button {
+  background-color: rebeccapurple;
+  margin: 0px;
+}
+
+.comp {
+  display: flex;
+  text-align: center;
+}
+
+.fade-in {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 400ms ease-out, visibility 400ms ease-out;
+  will-change: opacity, visibility;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  visibility: visible;
+} 
+  

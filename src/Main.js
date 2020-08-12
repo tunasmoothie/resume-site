@@ -1,44 +1,35 @@
 import React from 'react';
-import './Style.css';
+import './styles.css';
 
-import Button from './components/Button';
+import './components/Sidebar'
+import Sidebar from './components/Sidebar';
+import Block from './components/Block';
 
 function Main() {
+  const [isVisible, setVisible] = React.useState(false);
+  function handleClick(){
+    console.log("dsfsd");
+    setVisible(v => !v);
+  }
+
   return (
     <div className="background">
+      <Sidebar />
       <div className="comp">
-        <header className="comp">
-          <p>
-            Dick hard win hard.
-          </p>
-          <Button />
+        <header className="header">
+          <button onClick={handleClick} className="button">gay</button>
+          <div className={`fade-in ${isVisible ? 'visible' : ''}`}>
+            <p>fdsfdp</p>
+          </div>
         </header>
       </div>
       <div align-items="center" justify-content="center">
-        <Button />
       </div>
-      <p>d</p>
-      <p>d</p>
-      <p>d</p>
-      <p>d</p>
-      <p>d</p>
-      <p>d</p>
-      <p>d</p>
-      <p>d</p>
-      <p>d</p>
-      <p>d</p>
-      <p>d</p>
-      <p>d</p>
-      <p>d</p>
-      <p>d</p>
-      <p>d</p>
-      <p>d</p>
-      <p>d</p>
-      <p>d</p>
-      <p>d</p>
-      <p>d</p>
-      <p>d</p>
-      <p className="comp">d</p>
+      <Block>
+        <p>sdfsdfdsfsd</p>
+        <p>sdfsdfdsfsd</p>
+        <p>sdfsdfdsfsd</p>
+      </Block>
     </div>
   );
 }
