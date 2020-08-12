@@ -1,0 +1,16 @@
+.background {
+  background-image: url('./resources/background.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: black;
+  margin: 0px;
+}
+
+.button {
+  background-color: rebeccapurple;
+  margin: 0px;
+}
+
+.comp {
+  display: flex;
+}
