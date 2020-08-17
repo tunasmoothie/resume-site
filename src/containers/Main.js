@@ -1,9 +1,9 @@
 import React from 'react';
-import './styles.css';
+import '../styles.css';
 
-import './components/Sidebar'
-import Sidebar from './components/Sidebar';
-import Block from './components/Block';
+import '../components/Sidebar'
+import Sidebar from '../components/Sidebar';
+import Block from '../components/Block';
 
 function Main() {
   const [isVisible, setVisible] = React.useState(false);
