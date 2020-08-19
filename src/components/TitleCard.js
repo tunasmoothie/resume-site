@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import "../styles.css";
 
-class MainBG extends Component{
+class TitleCard extends Component{
     constructor(){
         super()
         this.state = {
-            isBlurred: 0
+            isVisible: 1
         }
     }
 
@@ -18,19 +18,22 @@ class MainBG extends Component{
 
     handleScroll = () => {
         if(window.pageYOffset < 200){
-            this.setState({isBlurred: 0})
+            this.setState({isVisible: 1})
         }
         else{
-            this.setState({isBlurred: 1})
+            this.setState({isVisible: 0})
         }
     }
 
     render(){
         return(
-            <div className={`main-bg ${this.state.isBlurred ? 'blurred' : ''}`}>
+            <div className={`title-card ${this.state.isVisible ? '' : 'hidden'}`}>
+                <header>
+                    HELLO
+                </header>
             </div>
         )
     }
 }
 
-export default MainBG;
+export default TitleCard;

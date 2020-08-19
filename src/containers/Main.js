@@ -4,6 +4,7 @@ import '../styles.css';
 import '../components/Sidebar'
 import MainBG from '../components/MainBG';
 import Header from '../components/Header';
+import TitleCard from '../components/TitleCard';
 
 class Main extends Component{
   render(){
@@ -11,6 +12,7 @@ class Main extends Component{
       <div>
         <MainBG />
         <Header />
+        <TitleCard />
       </div>
     );    
   }

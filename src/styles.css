@@ -18,6 +18,26 @@
   filter: blur(5px);
 }
 
+/*============================ Title Card =============================*/
+.title-card {
+  position: fixed;
+  left: 20%;
+  top: 40%;
+  margin: auto;
+  opacity: 1;
+  transition: opacity 100ms;
+}
+
+.title-card.hidden {
+  opacity: 0;
+}
+
+.title-card header{
+  color: white;
+  font-weight: 700;
+  font-size: 40px;
+}
+
 /*=============================== Header ===============================*/
 .header-box {
   background-color: grey;
