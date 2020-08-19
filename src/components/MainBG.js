@@ -17,7 +17,7 @@ class MainBG extends Component{
       }
 
     handleScroll = () => {
-        if(window.pageYOffset < 1){
+        if(window.pageYOffset < 100){
             this.setState({isBlurred: 0})
         }
         else{
