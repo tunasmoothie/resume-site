@@ -1,11 +1,20 @@
-import React from 'react';
+import React, { Component } from 'react';
 import '../styles.css';
 
 import '../components/Sidebar'
-import Sidebar from '../components/Sidebar';
-import Block from '../components/Block';
+import MainBG from '../components/MainBG';
+import Header from '../components/Header';
 
-function Main() {
+class Main extends Component{
+  render(){
+    return(
+      <div>
+        <MainBG />
+        <Header />
+      </div>
+    );    
+  }
+  /*
   const [isVisible, setVisible] = React.useState(false);
   function handleClick(){
     console.log("dsfsd");
@@ -13,7 +22,9 @@ function Main() {
   }
 
   return (
-    <div className="background">
+    <div>
+      <Header />
+      <div className="background" />
       <Sidebar />
       <div className="comp">
         <header className="header">
@@ -26,12 +37,56 @@ function Main() {
       <div align-items="center" justify-content="center">
       </div>
       <Block>
-        <p>sdfsdfdsfsd</p>
-        <p>sdfsdfdsfsd</p>
-        <p>sdfsdfdsfsd</p>
+        
       </Block>
+      <p>sdfsdfdsfsd</p>
+        <p>sdfsdfdsfsd</p>
+        <p>sdfsdfdsfsd</p>
+        <p>sdfsdfdsfsd</p>
+        <p>sdfsdfdsfsd</p>
+        <p>sdfsdfdsfsd</p>
+        <p>sdfsdfdsfsd</p>
+        <p>sdfsdfdsfsd</p>
+        <p>sdfsdfdsfsd</p>
+        <p>sdfsdfdsfsd</p>
+        <p>sdfsdfdsfsd</p>
+        <p>sdfsdfdsfsd</p>
+        <p>sdfsdfdsfsd</p>
+        <p>sdfsdfdsfsd</p>
+        <p>sdfsdfdsfsd</p>
+        <p>sdfsdfdsfsd</p>
+        <p>sdfsdfdsfsd</p>
+        <p>sdfsdfdsfsd</p>
+        <p>sdfsdfdsfsd</p>
+        <p>sdfsdfdsfsd</p>
+        <p>sdfsdfdsfsd</p>
+        <p>sdfsdfdsfsd</p>
+        <p>sdfsdfdsfsd</p>
+        <p>sdfsdfdsfsd</p>
+        <p>sdfsdfdsfsd</p>
+        <p>sdfsdfdsfsd</p>
+        <p>sdfsdfdsfsd</p>
+        <p>sdfsdfdsfsd</p>
+        <p>sdfsdfdsfsd</p>
+        <p>sdfsdfdsfsd</p>
+        <p>sdfsdfdsfsd</p>
+        <p>sdfsdfdsfsd</p>
+        <p>sdfsdfdsfsd</p>
+        <p>sdfsdfdsfsd</p>
+        <p>sdfsdfdsfsd</p>
+        <p>sdfsdfdsfsd</p>
+        <p>sdfsdfdsfsd</p>
+        <p>sdfsdfdsfsd</p>
+        <p>sdfsdfdsfsd</p>
+        <p>sdfsdfdsfsd</p>
+        <p>sdfsdfdsfsd</p>
+        <p>sdfsdfdsfsd</p>
+        <p>sdfsdfdsfsd</p>
+        <p>sdfsdfdsfsd</p>
+        <p>sdfsdfdsfsd</p>
     </div>
-  );
+  );*/
 }
+
 
 export default Main;
