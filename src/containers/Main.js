@@ -5,6 +5,7 @@ import '../components/Sidebar'
 import MainBG from '../components/MainBG';
 import Header from '../components/Header';
 import TitleCard from '../components/TitleCard';
+import Block from '../components/Block';
 
 class Main extends Component{
   render(){
@@ -13,6 +14,7 @@ class Main extends Component{
         <MainBG />
         <Header />
         <TitleCard />
+        <Block />
       </div>
     );    
   }

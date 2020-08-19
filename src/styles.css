@@ -5,10 +5,9 @@
   background-position: center;
   background-attachment: fixed;
   background-color: black;
-  overflow:hidden;
   position: absolute;
-  min-height: 150vh;
-  min-width: 100vw;
+  min-height: 1000vh;
+  min-width: 100%;
   margin: 0px;
 
   transition: filter 200ms ease-in;
@@ -35,7 +34,7 @@
 .title-card header{
   color: white;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 80px;
 }
 
 /*=============================== Header ===============================*/
@@ -67,6 +66,17 @@
   text-decoration: none;
 }
 
+/*=============================== Block ===============================*/
+.block {
+  background-color: lightskyblue;
+  align-self: center;
+  min-height: 1000px;
+  width:100%;
+  position: absolute;
+  top: 100%;
+  left: 0%;
+}
+
 .homebutton {
   float: center;
   margin: auto;
@@ -75,25 +85,6 @@
   text-decoration: yellow;
 }
 
-
-.sidebar {
-  color: white;
-  background-color: lightblue;
-  opacity: 0.9;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-  float: right;
-  transform: translateY(30vh);
-  width: 60px;
-  height: 250px;
-  margin: auto;
-}
-
-.block {
-  background-color: grey;
-  margin: 30px;
-  height: auto;
-}
 
 .header {
   align-items: center;
