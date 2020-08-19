@@ -28,9 +28,9 @@ class TitleCard extends Component{
     render(){
         return(
             <div className={`title-card ${this.state.isVisible ? '' : 'hidden'}`}>
-                <header>
+                <div className="hello">
                     HELLO
-                </header>
+                </div>
             </div>
         )
     }

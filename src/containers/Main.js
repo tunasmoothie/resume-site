@@ -10,12 +10,12 @@ import Block from '../components/Block';
 class Main extends Component{
   render(){
     return(
-      <div>
+      <main>
         <MainBG />
         <Header />
         <TitleCard />
         <Block />
-      </div>
+      </main>
     );    
   }
   /*
