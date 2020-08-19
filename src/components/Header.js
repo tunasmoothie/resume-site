@@ -9,9 +9,7 @@ function Header(){
             <header class="header-box">
                 <HomeButton />
                 <ul class="header-ul">
-                    <li> <a href='#'>Education</a> </li>
-                    <li> <a href='#'>Skills</a> </li>
-                    <li> <a href='#'>Experience</a> </li>
+
                 </ul>
             </header>
         </Headroom>
