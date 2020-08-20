@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "../styles.css";
+import "../styles.scss";
 
 class TitleCard extends Component{
     constructor(){
@@ -29,7 +29,7 @@ class TitleCard extends Component{
         return(
             <div className={`title-card ${this.state.isVisible ? '' : 'hidden'}`}>
                 <div className="hello">
-                    HELLO
+                    <div class="error mx-auto" data-text="Welcome.">Welcome.</div>
                 </div>
             </div>
         )

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "../styles.css";
+import "../styles.scss";
 
 class MainBG extends Component{
     constructor(){
@@ -17,7 +17,7 @@ class MainBG extends Component{
       }
 
     handleScroll = () => {
-        if(window.pageYOffset < 200){
+        if(window.pageYOffset < 100){
             this.setState({isBlurred: 0})
         }
         else{

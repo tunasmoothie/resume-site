@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import '../styles.css';
+import '../styles.scss';
 
-import '../components/Sidebar'
 import MainBG from '../components/MainBG';
 import Header from '../components/Header';
 import TitleCard from '../components/TitleCard';
-import Block from '../components/Block';
+import IntroSection from './IntroSection';
+import SkillsSection from "./SkillsSection";
 
 class Main extends Component{
   render(){
@@ -14,7 +14,8 @@ class Main extends Component{
         <MainBG />
         <Header />
         <TitleCard />
-        <Block />
+        <IntroSection />
+        <SkillsSection />
       </main>
     );    
   }
