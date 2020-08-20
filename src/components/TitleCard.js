@@ -28,9 +28,14 @@ class TitleCard extends Component{
     render(){
         return(
             <div className={`title-card ${this.state.isVisible ? '' : 'hidden'}`}>
-                <div className="hello">
+                <h1>
                     <div class="error mx-auto" data-text="Welcome.">Welcome.</div>
+                </h1>
+                <div class="title-card line">
                 </div>
+                <h2 className="title-card bottomText">
+                    to my website
+                </h2>
             </div>
         )
     }

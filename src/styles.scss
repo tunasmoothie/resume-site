@@ -22,7 +22,7 @@
 /*============================ Title Card =============================*/
 .title-card {
   position: fixed;
-  left: 15%;
+  left: 10%;
   top: 40%;
   margin: auto;
   opacity: 1;
@@ -32,25 +32,61 @@
   color: white;
   font-weight: 700;
   font-size: 70px;
-
-  animation-duration: 1.5s;
-  animation-timing-function: ease-in-out; 
-  animation-iteration-count: 1; 
-  animation-name: slideInFromLeft;
+  letter-spacing: 8px;
 }
 
 .title-card.hidden {
   opacity: 0;
 }
 
-@keyframes slideInFromLeft {
+.title-card h1 {
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out; 
+  animation-iteration-count: 1; 
+  animation-name: fadeFromTop;
+
+  margin: 1px;
+}
+
+.title-card h2 {
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 6px;
+
+  position: relative;
+  left: 400px;
+  margin: 1px;
+
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out; 
+  animation-iteration-count: 1; 
+  animation-name: fadeFromBottom;
+}
+
+.title-card.line {
+  position: inherit;
+  background-color: white;
+  min-height: 3px;
+  width: 1000px;
+  transform: translateY(70px);
+  margin: 1px;
+  left: 0px;
+
+  animation-fill-mode: forwards;
+  animation-duration: 2.5s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1; 
+  animation-name: lineRunAnim;
+}
+
+@keyframes fadeFromTop {
   0% {
     opacity: 0;
-    transform: translateY(-10%);
+    transform: translateY(-20%);
   }
   50% {
     opacity: 0;
-    transform: translateY(-10%);
+    transform: translateY(-20%);
   }
   75% {
     opacity: 0.2;
@@ -61,10 +97,43 @@
   }
 }
 
+@keyframes fadeFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+  75% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes lineRunAnim {
+  0% {
+    transform: translateX(-400%) translateY(70px);
+  }
+  30% {
+    transform: translateX(-400%) translateY(70px);
+  }
+  70% {
+    transform: translateX(0%) scaleX(400%) translateY(70px);
+  }
+  100% {
+    transform: translateX(300%) translateY(70px);
+  }
+}
+
 /*=============================== Header ===============================*/
 .header-box {
   background-color: grey;
-  opacity: 0.5;
+  opacity: 0.1;
   min-height: 50px;
   max-height: 50px;
   min-width: 100%;
@@ -110,7 +179,7 @@
   filter: grayscale(0.7);
 
   position: relative;
-  min-height: 500px;
+  min-height: 800px;
   top: 50vh;
 }
 
