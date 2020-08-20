@@ -76,13 +76,13 @@
   position: absolute;
   background-color: white;
   min-height: 3px;
-  width: 1000px;
+  width: 350px;
   top:10vh;
   margin: 1px;
-  left: 0px;
+  left: 9vw;
 
-  animation-fill-mode: forwards;
-  animation-duration: 2.5s;
+  animation-fill-mode: forwards;;
+  animation-duration: 1.7s;
   animation-timing-function: ease-out;
   animation-iteration-count: 1; 
   animation-name: lineRunAnim;
@@ -126,16 +126,22 @@
 
 @keyframes lineRunAnim {
   0% {
-    transform: translateX(-400%);
+    transform: translateX(400%) scaleY(1000000);
   }
   30% {
-    transform: translateX(-400%);
+    transform: translateX(400%) scaleY(1000000);
   }
-  70% {
-    transform: translateX(0%) scaleX(400%);
+  50% {
+    transform: translateX(-100%) scaleX(70%) scaleY(1000000);
+  }
+  80% {
+    transform: translateX(90%) scaleX(0%) scaleY(1000000);
+  }
+  81% {
+    transform: translateX(20%) scaleX(0%) scaleY(100%);
   }
   100% {
-    transform: translateX(300%);
+    transform: translateX(20%) scaleX(100%) scaleY(100%);
   }
 }
 
