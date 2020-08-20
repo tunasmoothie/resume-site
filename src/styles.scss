@@ -40,23 +40,14 @@
   overflow: hidden;
 }
 
-.header-ul li {
-  display: inline;
-  color: white;
-  text-align: center;
-  text-size-adjust: 12;
-  padding: 20px;
-  text-decoration: none;
-}
-
 .header.button {
+  margin: 0px;
   background-color: transparent;
   text-align: center;
   color: white;
+  font-weight: 600;
   font-size: 50px;
 }
-
-.header-box
 
 /*============================ Title Card =============================*/
 .title-card {

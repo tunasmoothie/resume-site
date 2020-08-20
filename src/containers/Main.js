@@ -11,8 +11,8 @@ class Main extends Component{
   render(){
     return(
       <main>
-        <Header />
         <MainBG />
+        <Header />
         <div className='main-wrapper'>
           <TitleCard />
           <IntroSection />
