@@ -27,7 +27,9 @@ class MainBG extends Component{
 
     render(){
         return(
-            <div className={`main-bg ${this.state.isBlurred ? 'blurred' : ''}`}>
+            <div className='main-bg'>
+                <div className={`main-bg ${this.state.isBlurred ? 'blurred' : ''}`} />
+                <div className='main-bg veil' />
             </div>
         )
     }

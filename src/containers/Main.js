@@ -13,11 +13,9 @@ class Main extends Component{
       <main>
         <MainBG />
         <Header />
-        <div className='main-wrapper'>
-          <TitleCard />
-          <IntroSection />
-          <SkillsSection />
-        </div>
+        <TitleCard />
+        <IntroSection />
+        <SkillsSection />
       </main>
     );    
   }
