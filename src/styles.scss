@@ -101,7 +101,7 @@
   animation-iteration-count: 1; 
   animation-name: fadeFromTop;
 
-  margin: 1px;
+  margin: 5px;
 }
 
 .title-card h2 {
@@ -120,12 +120,11 @@
 }
 
 .title-card.line {
-  position: absolute;
+  position: relative;
   background-color: white;
   text-align: center;
   min-height: 3px;
   width: 350px;
-  top:10vh;
   left: 15vw;
   margin: 1px;
 
