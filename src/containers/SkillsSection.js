@@ -8,6 +8,7 @@ class SkillsSection extends Component{
         return(
             <div className="skills-section">
                 <Block />
+                <p className="header index">TESTESETTS</p>
             </div>
         );
     }

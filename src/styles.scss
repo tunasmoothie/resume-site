@@ -18,7 +18,7 @@
   min-height: 100%;
   min-width: 100%;
   transform: scale(1.1);
-  margin: auto;
+  margin: 0px;
   z-index: -1;
 
   transition: filter 200ms ease-in-out;
@@ -27,6 +27,36 @@
 .main-bg.blurred {
   filter: blur(10px);
 }
+
+/*=============================== Header ===============================*/
+.header-box {
+  background-color: grey;
+  opacity: 0.1;
+  min-height: 90px;
+  max-height: 90px;
+  min-width: 100%;
+  margin: 0px;
+  padding: 0px 0px;
+  overflow: hidden;
+}
+
+.header-ul li {
+  display: inline;
+  color: white;
+  text-align: center;
+  text-size-adjust: 12;
+  padding: 20px;
+  text-decoration: none;
+}
+
+.header.button {
+  background-color: transparent;
+  text-align: center;
+  color: white;
+  font-size: 50px;
+}
+
+.header-box
 
 /*============================ Title Card =============================*/
 .title-card {
@@ -143,35 +173,6 @@
   100% {
     transform: translateX(20%) scaleX(100%) scaleY(100%);
   }
-}
-
-/*=============================== Header ===============================*/
-.header-box {
-  background-color: grey;
-  opacity: 0.1;
-  min-height: 50px;
-  max-height: 50px;
-  min-width: 100%;
-  margin: 0px auto;
-  padding: 0px 0px;
-  overflow: hidden;
-}
-
-.header-ul {
-  list-style-type: none;
-  float: center;
-  margin: auto;
-  padding: 20px;
-  overflow: hidden;
-}
-
-.header-ul li {
-  display: inline;
-  color: white;
-  text-align: center;
-  text-size-adjust: 12;
-  padding: 20px;
-  text-decoration: none;
 }
 
 /*=============================== Block ===============================*/
