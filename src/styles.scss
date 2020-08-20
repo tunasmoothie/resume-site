@@ -71,7 +71,7 @@
 
 .title-card h1 {
   animation-duration: 2s;
-  animation-timing-function: ease-in-out; 
+  animation-timing-function: ease; 
   animation-iteration-count: 1; 
   animation-name: fadeFromTop;
 
@@ -88,7 +88,7 @@
   margin: 1px;
 
   animation-duration: 2s;
-  animation-timing-function: ease-in-out; 
+  animation-timing-function: ease; 
   animation-iteration-count: 1; 
   animation-name: fadeFromBottom;
 }
@@ -103,8 +103,8 @@
   left: 9vw;
 
   animation-fill-mode: forwards;;
-  animation-duration: 1.7s;
-  animation-timing-function: ease-out;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
   animation-iteration-count: 1; 
   animation-name: lineRunAnim;
 }
@@ -147,18 +147,23 @@
 
 @keyframes lineRunAnim {
   0% {
-    transform: translateX(400%) scaleY(10000000);
+    background-color: black;
+    transform: translateX(400%) scaleX(1200%) scaleY(10000000);
   }
   30% {
-    transform: translateX(400%) scaleY(10000000);
+    background-color: black;
+    transform: translateX(400%) scaleX(1200%) scaleY(10000000);
   }
   50% {
+    background-color: black;
     transform: translateX(-100%) scaleX(70%) scaleY(10000000);
   }
   80% {
-    transform: translateX(110%) scaleX(0%) scaleY(10000000);
+    background-color: black;
+    transform: translateX(300%) scaleX(0%) scaleY(10000000);
   }
   81% {
+    background-color: white;
     transform: translateX(20%) scaleX(0%) scaleY(100%);
   }
   100% {
