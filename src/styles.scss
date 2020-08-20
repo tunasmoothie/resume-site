@@ -1,3 +1,12 @@
+.main-wrapper {
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  left: 0;
+  align-content: center;
+
+  min-height: 5000px;
+}
 /*============================ Background =============================*/
 .main-bg {
   background-image: url('./assets/dark_bg.jpg');
@@ -27,7 +36,7 @@
   margin: auto;
   opacity: 1;
   transition: opacity 200ms ease-in;
-  z-index: 3;
+  z-index: 10;
 
   color: white;
   font-weight: 700;
@@ -50,11 +59,11 @@
 
 .title-card h2 {
   font-weight: 400;
-  font-size: 30px;
+  font-size: 2vw;
   letter-spacing: 6px;
 
   position: relative;
-  left: 400px;
+  left: 30vw;
   margin: 1px;
 
   animation-duration: 2s;
@@ -64,11 +73,11 @@
 }
 
 .title-card.line {
-  position: inherit;
+  position: absolute;
   background-color: white;
   min-height: 3px;
   width: 1000px;
-  transform: translateY(70px);
+  top:10vh;
   margin: 1px;
   left: 0px;
 
@@ -117,16 +126,16 @@
 
 @keyframes lineRunAnim {
   0% {
-    transform: translateX(-400%) translateY(70px);
+    transform: translateX(-400%);
   }
   30% {
-    transform: translateX(-400%) translateY(70px);
+    transform: translateX(-400%);
   }
   70% {
-    transform: translateX(0%) scaleX(400%) translateY(70px);
+    transform: translateX(0%) scaleX(400%);
   }
   100% {
-    transform: translateX(300%) translateY(70px);
+    transform: translateX(300%);
   }
 }
 
@@ -174,13 +183,16 @@
   background-image: url('./assets/background.jpg');
   background-size: cover;
   background-position: center;
-  color: white;
 
   filter: grayscale(0.7);
 
+  display: block;
   position: relative;
-  min-height: 800px;
-  top: 50vh;
+  min-height: 600px;
+  width: 100%;
+  top: 60vh;
+  margin: 0px;
+
 }
 
 /*========================== Skills Section ===========================*/
@@ -189,20 +201,23 @@
   background-size: cover;
   background-position: center;
 
+  display: block;
   position: relative;
-  min-height: 500px;
-  top: 250px;
+  width: 100%;
+  min-height: 800px;
+  top: 400px;
+  margin: 0px;
 }
 
 
 
-
+/*========================= Glitch Text Effect ==========================*/
 .text-center {
   text-align: center!important;
 }
 .error {
   color: white;
-  font-size: 70px;
+  font-size: 5vw;
   position: relative;
   line-height: 1;
   width: 12.5rem;

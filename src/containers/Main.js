@@ -12,85 +12,15 @@ class Main extends Component{
     return(
       <main>
         <MainBG />
-        <Header />
-        <TitleCard />
-        <IntroSection />
-        <SkillsSection />
+        <div className="main-wrapper">
+          <TitleCard />
+          <IntroSection />
+          <SkillsSection />
+        </div>
       </main>
     );    
   }
-  /*
-  const [isVisible, setVisible] = React.useState(false);
-  function handleClick(){
-    console.log("dsfsd");
-    setVisible(v => !v);
-  }
 
-  return (
-    <div>
-      <Header />
-      <div className="background" />
-      <Sidebar />
-      <div className="comp">
-        <header className="header">
-          <button onClick={handleClick} className="button">gay</button>
-          <div className={`fade-in ${isVisible ? 'visible' : ''}`}>
-            <p>fdsfdp</p>
-          </div>
-        </header>
-      </div>
-      <div align-items="center" justify-content="center">
-      </div>
-      <Block>
-        
-      </Block>
-      <p>sdfsdfdsfsd</p>
-        <p>sdfsdfdsfsd</p>
-        <p>sdfsdfdsfsd</p>
-        <p>sdfsdfdsfsd</p>
-        <p>sdfsdfdsfsd</p>
-        <p>sdfsdfdsfsd</p>
-        <p>sdfsdfdsfsd</p>
-        <p>sdfsdfdsfsd</p>
-        <p>sdfsdfdsfsd</p>
-        <p>sdfsdfdsfsd</p>
-        <p>sdfsdfdsfsd</p>
-        <p>sdfsdfdsfsd</p>
-        <p>sdfsdfdsfsd</p>
-        <p>sdfsdfdsfsd</p>
-        <p>sdfsdfdsfsd</p>
-        <p>sdfsdfdsfsd</p>
-        <p>sdfsdfdsfsd</p>
-        <p>sdfsdfdsfsd</p>
-        <p>sdfsdfdsfsd</p>
-        <p>sdfsdfdsfsd</p>
-        <p>sdfsdfdsfsd</p>
-        <p>sdfsdfdsfsd</p>
-        <p>sdfsdfdsfsd</p>
-        <p>sdfsdfdsfsd</p>
-        <p>sdfsdfdsfsd</p>
-        <p>sdfsdfdsfsd</p>
-        <p>sdfsdfdsfsd</p>
-        <p>sdfsdfdsfsd</p>
-        <p>sdfsdfdsfsd</p>
-        <p>sdfsdfdsfsd</p>
-        <p>sdfsdfdsfsd</p>
-        <p>sdfsdfdsfsd</p>
-        <p>sdfsdfdsfsd</p>
-        <p>sdfsdfdsfsd</p>
-        <p>sdfsdfdsfsd</p>
-        <p>sdfsdfdsfsd</p>
-        <p>sdfsdfdsfsd</p>
-        <p>sdfsdfdsfsd</p>
-        <p>sdfsdfdsfsd</p>
-        <p>sdfsdfdsfsd</p>
-        <p>sdfsdfdsfsd</p>
-        <p>sdfsdfdsfsd</p>
-        <p>sdfsdfdsfsd</p>
-        <p>sdfsdfdsfsd</p>
-        <p>sdfsdfdsfsd</p>
-    </div>
-  );*/
 }
 
 
