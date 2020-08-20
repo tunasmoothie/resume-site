@@ -96,17 +96,14 @@
 .title-card.line {
   position: absolute;
   background-color: white;
+  text-align: center;
   min-height: 3px;
   width: 350px;
   top:10vh;
+  left: 15vw;
   margin: 1px;
-  left: 9vw;
 
-  animation-fill-mode: forwards;;
-  animation-duration: 2s;
-  animation-timing-function: ease-in;
-  animation-iteration-count: 1; 
-  animation-name: lineRunAnim;
+  animation: 1s ease-out 0s 1 normal forwards running lineAnim;
 }
 
 @keyframes fadeFromTop {
@@ -142,6 +139,25 @@
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+
+@keyframes lineAnim {
+  0% {
+    opacity: 0;
+    width: 10000px;
+    transform: translateX(20%);
+  }
+  80%{
+    opacity: 0;
+    width: 1000px;
+    transform: translateX(20%);
+  }
+  100% {
+    opacity: 1;
+    width: 350px;
+    transform: translateX(0%);
   }
 }
 
@@ -243,10 +259,10 @@
 .error:after {
   content: attr(data-text);
   position: absolute;
-  left: 4px;
-  text-shadow: -1px 0 #e74a3b;
+  left: 3px;
+  text-shadow: -2px 0 lime;
   top: 0;
-  color: white;
+  color: whitesmoke;
   background: transparent;
   overflow: hidden;
   clip: rect(0,900px,0,0);
