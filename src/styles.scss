@@ -123,12 +123,12 @@
 
 .title-card.line {
   position: relative;
-  background-color: white;
+  background-color: black;
   text-align: center;
-  min-height: 3px;
-  width: 350px;
+  min-height: 0.4vh;
+  width: 21vw;
   left: 15vw;
-  margin: 1px;
+  margin: 0px;
 
   animation: 1.5s ease-out 0s 1 normal forwards running lineAnim;
 }
@@ -176,14 +176,14 @@
     width: 10000px;
     transform: translateX(20%);
   }
-  80%{
+  75%{
     opacity: 0;
-    width: 1000px;
+    width: 70vw;
     transform: translateX(20%);
   }
   100% {
     opacity: 1;
-    width: 350px;
+    width: 21vw;
     transform: translateX(0%);
   }
 }

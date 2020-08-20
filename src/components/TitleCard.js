@@ -34,7 +34,7 @@ class TitleCard extends Component{
                 <div class="title-card line">
                 </div>
                 <h2 className="title-card bottomText">
-                    to my website
+                    to my place
                 </h2>
             </div>
         )
