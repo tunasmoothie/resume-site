@@ -9,13 +9,13 @@
 }
 /*============================ Background =============================*/
 .main-bg {
-  background-image: url('./assets/dark_bg.jpg');
+  background-image: url('./assets/light_bg.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-color: black;
   background-position: 400px;
-  position: fixed;
+  position: fixed;;
   min-height: 100%;
   min-width: 100%;
   transform: scale(1.1);
@@ -39,7 +39,6 @@
   z-index: 100;
   animation: 1s ease-in 1 0.4s normal forwards running veilAnim;
 }
-
 
 @keyframes veilAnim {
   0% {
@@ -71,9 +70,11 @@
   margin: 0px;
   background-color: transparent;
   text-align: center;
+  align-items: left;
   color: white;
   font-weight: 600;
-  font-size: 50px;
+  font-size: 30px;
+  
 }
 
 /*============================ Title Card =============================*/
@@ -87,7 +88,7 @@
   z-index: 10;
   user-select: none;
 
-  color: white;
+  color: black;
   font-weight: 700;
   font-size: 70px;
   letter-spacing: 8px;
@@ -107,9 +108,10 @@
 }
 
 .title-card h2 {
-  font-weight: 400;
+  font-weight: 600;
   font-size: 2vw;
   letter-spacing: 6px;
+  text-shadow: 1px -1px 0px #FFC4F5;
 
   position: relative;
   left: 30vw;
@@ -226,11 +228,11 @@
 
 /*========================== Intro Section ===========================*/
 .intro-section {
-  background-image: url('./assets/background.jpg');
+  background-color: #F4F4F4;
   background-size: cover;
   background-position: center;
 
-  filter: grayscale(0.7);
+  filter: grayscale(1) blur(1px);
 
   display: block;
   position: relative;
@@ -262,7 +264,7 @@
   text-align: center!important;
 }
 .error {
-  color: white;
+  color: black;
   font-size: 5vw;
   position: relative;
   line-height: 1;
@@ -277,7 +279,7 @@
   left: 8px;
   text-shadow: 1px 0 #4e73df;
   top: 0;
-  color: white;
+  color: black;
   background: #f8f9fc;
   overflow: hidden;
   clip: rect(0,900px,0,0);
@@ -287,9 +289,9 @@
   content: attr(data-text);
   position: absolute;
   left: 3px;
-  text-shadow: -2px 0 lime;
+  text-shadow: -2px 0 magenta;
   top: 0;
-  color: whitesmoke;
+  color: black;
   background: transparent;
   overflow: hidden;
   clip: rect(0,900px,0,0);
