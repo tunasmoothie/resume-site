@@ -84,7 +84,7 @@
   top: 40%;
   margin: auto;
   opacity: 1;
-  transition: opacity 200ms ease-in-out;
+  transition: opacity 120ms ease-in-out;
   z-index: 10;
   user-select: none;
 
@@ -110,7 +110,7 @@
 .title-card h2 {
   font-weight: 600;
   font-size: 2vw;
-  letter-spacing: 6px;
+  letter-spacing: 5px;
   text-shadow: 1px -1px 0px #FFC4F5;
 
   position: relative;
@@ -256,7 +256,6 @@
   top: 1000px;
   margin: 0px;
 }
-
 
 
 /*========================= Glitch Text Effect ==========================*/
