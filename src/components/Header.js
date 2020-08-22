@@ -5,9 +5,7 @@ import "../styles.scss";
 function Header(){
     return(
         <Headroom>
-            <div class="header button">
-                Button
-            </div>
+
         </Headroom>
     );
 }
