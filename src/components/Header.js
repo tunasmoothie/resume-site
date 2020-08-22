@@ -5,7 +5,7 @@ import "../styles.scss";
 function Header(){
     return(
         <Headroom>
-
+            
         </Headroom>
     );
 }

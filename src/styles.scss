@@ -154,7 +154,7 @@
     transform: translateY(-20%);
   }
   75% {
-    opacity: 0.2;
+    opacity: 0.4;
   }
   100% {
     opacity: 1;
@@ -227,12 +227,12 @@
 
 /*========================== Intro Section ===========================*/
 .intro-section {
-  background-color: #F4F4F4;
+  background-color: gray;
 
   display: inline-block;
-  position: relative;
+  position: absolute;
   text-align: center;
-  min-height: 600px;
+  min-height: 800px;
   width: 100%;
   top: 100vh;
   margin: 0px;
@@ -247,18 +247,22 @@
 
 /*========================== Skills Section ===========================*/
 .skills-section {
-  background-color: white;
-  background-size: cover;
-  background-position: center;
+  background-color: #F4F4F4;
 
-  display: block;
-  position: relative;
-  width: 100%;
+  display: inline-block;
+  position: absolute;
   min-height: 800px;
+  width: 100%;
   top: 1000px;
   margin: 0px;
+  z-index: 1;
 }
 
+.skills-section h1{
+  display: block;
+  position: absolute;
+  left: 50%;
+}
 
 /*========================= Glitch Text Effect ==========================*/
 .text-center {
