@@ -216,32 +216,26 @@
   }
 }
 
-/*=============================== Block ===============================*/
-.block {
-  background-color: inherit;
-  align-self: center;
-  min-height: inherit;
-  height: inherit;
-  top: inherit;
-  width:100%;
-}
-
 /*========================== Intro Section ===========================*/
 .intro-section {
   background-color: #F4F4F4;
   background-size: cover;
   background-position: center;
 
-  filter: grayscale(1) blur(1px);
-
   display: block;
   position: relative;
+  text-align: center;
   min-height: 600px;
   width: 100%;
   top: 100vh;
   margin: 0px;
-
 }
+
+.intro-section p{
+  color: mediumpurple; 
+  font-size: 5vh;
+}
+
 
 /*========================== Skills Section ===========================*/
 .skills-section {

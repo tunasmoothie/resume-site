@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 
-import Block from '../components/Block';
 import '../styles.scss';
 
 class IntroSection extends Component{
+
+    introTitle = document.getElementById("introTitle");
+
     render(){
         return(
             <div className='intro-section'>
-                <Block />
+                <p>Your mom is gay.</p>
             </div>
         );
     }
