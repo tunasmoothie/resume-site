@@ -37,7 +37,7 @@
   background-image: none;
   background-color: #0c0e0f;
   z-index: 100;
-  animation: 1s ease-in 1 2.4s normal forwards running veilAnim;
+  animation: 1s ease-in 1 1.4s normal forwards running veilAnim;
 }
 
 @keyframes veilAnim {
@@ -102,7 +102,7 @@
 .title-card h1 {
   opacity: 0;
 
-  animation-delay: 2s;
+  animation-delay: 1s;
   animation-duration: 2.7s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-out; 
@@ -124,7 +124,7 @@
   margin: 1px;
 
   animation-fill-mode: forwards;
-  animation-delay: 2s;
+  animation-delay: 1s;
   animation-duration: 2.7s;
   animation-timing-function: ease-out; 
   animation-iteration-count: 1; 
@@ -141,7 +141,7 @@
   margin: 0px;
   opacity: 0;
 
-  animation: 1.5s ease-out 2s 1 normal forwards running lineAnim;
+  animation: 1.5s ease-out 1s 1 normal forwards running lineAnim;
 }
 
 @keyframes fadeFromTop {
@@ -228,16 +228,15 @@
 /*========================== Intro Section ===========================*/
 .intro-section {
   background-color: #F4F4F4;
-  background-size: cover;
-  background-position: center;
 
-  display: block;
+  display: inline-block;
   position: relative;
   text-align: center;
   min-height: 600px;
   width: 100%;
   top: 100vh;
   margin: 0px;
+  z-index: 1;
 }
 
 .intro-section p{
