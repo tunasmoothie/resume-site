@@ -29,9 +29,9 @@ class TitleCard extends Component{
         return(
             <div className={`title-card ${this.state.isVisible ? '' : 'hidden'}`}>
                 <h1>
-                    <div class="error mx-auto" data-text="Welcome.">Welcome.</div>
+                    <div className="error mx-auto" data-text="Welcome.">Welcome.</div>
                 </h1>
-                <div class="title-card line">
+                <div className="title-card line">
                 </div>
                 <h2 className="title-card bottomText">
                     歡迎。ようこそ
