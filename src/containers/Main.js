@@ -15,7 +15,6 @@ class Main extends Component{
         <Header />
         <TitleCard />
         <IntroSection />
-        <SkillsSection />
       </main>
     );    
   }

@@ -227,33 +227,27 @@
 
 /*========================== Intro Section ===========================*/
 .intro-section {
-  background-color: gray;
+  background-color: pink;
+  transition: background-color 2s ease-in-out;
+}
 
-  display: inline-block;
-  position: absolute;
-  text-align: center;
-  min-height: 800px;
-  width: 100%;
-  top: 100vh;
-  margin: 0px;
-  z-index: 1;
+.intro-section.hidden {
+  background-color: blue;
 }
 
 .intro-section p{
   color: mediumpurple; 
-  font-size: 5vh;
+  font-size: 10vh;
 }
 
-#target {
-  background-color: hotpink;
-
+#targeto {
   display: inline-block;
-  position: relative;
+  position: absolute;
   text-align: center;
-  min-height: 800px;
+  min-height: 500px;
   width: 100%;
-  top: 400vh;
-  margin: auto;
+  top: 100vh;
+  margin: 0px;
   z-index: 1;
 }
 

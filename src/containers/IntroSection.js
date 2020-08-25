@@ -1,31 +1,35 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 
 import '../styles.scss';
 
-
-const introTitle = document.getElementById("target");
-
-function intersectHandler(entries, observer){
-    console.log("interstct");
-}
-
-let intersectObserver = new IntersectionObserver(intersectHandler);
-window.onload = function(){
-    //intersectObserver.observe(document.getElementById('target'));
-    console.log("interstct");
-}
-
 class IntroSection extends Component{
+    constructor(){
+        super()
+        this.state = {
+            isVisible: true
+        }
+    }
+
+    isVisible = false;
+
+    intersectHandler = () =>{
+        this.setState({isVisible: this.isVisible}); 
+        this.isVisible = !this.isVisible;
+    }
 
     render(){
-
+        const intersectObserver = new IntersectionObserver(this.intersectHandler, {threshold: 0.1});
+    
+        window.onload = function(){
+            intersectObserver.observe(document.querySelector('#targeto'));
+        }
         return(
-            <div className='intro-section'>
-                <div id='target'></div>
-                <p>Your mom is gay.</p>
-            </div>
+          <div id='targeto' className={`intro-section ${this.state.isVisible ? '' : 'hidden'}`}>
+            <p>sesfd</p>
+          </div>
         );
     }
+
 }
 
 export default IntroSection;
