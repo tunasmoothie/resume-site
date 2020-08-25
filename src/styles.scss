@@ -236,26 +236,38 @@
   margin: 0px;
   z-index: 1;
 
-  background-color: transparent;
+  background-color: #F4F4F4;
   transition: background-color 1s ease-in-out;
 }
 
 .intro-section p{
   color: mediumpurple; 
-  transition: color 1s ease-in-out;
+  transition: font-size 1s ease-in-out;
   font-size: 10vh;
 }
 
 
 .intro-section.hidden {
-  background-color: #F4F4F4;
+  background-color: transparent;
 }
 
 .intro-section.hidden p{
   color: yellow; 
-  font-size: 10vh;
+  font-size: 30vh;
 }
 
+.test{
+  animation: testanim 1s none 0s 1 forwards forwards;
+}
+
+@keyframes testanim{
+  0%{
+    font-size: 30px;
+  }
+  100% {
+    font-size: 300px;
+  }
+}
 /*========================== Skills Section ===========================*/
 .skills-section {
   background-color: #F4F4F4;

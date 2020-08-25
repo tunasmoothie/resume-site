@@ -6,15 +6,20 @@ class IntroSection extends Component{
     constructor(){
         super()
         this.state = {
-            isVisible: true
+            isVisible: false
         }
     }
 
     isVisible = false;
 
-    intersectHandler = () =>{
-        this.setState({isVisible: this.isVisible}); 
-        this.isVisible = !this.isVisible;
+    intersectHandler = (entries, options) =>{
+        entries.forEach(entry => {
+            if (entry.intersectionRatio > 0) {
+                console.log(this.isVisible);
+                this.isVisible = !this.isVisible;
+                this.setState({isVisible: this.isVisible}); 
+            } else {}
+        });
     }
 
     render(){
@@ -25,7 +30,7 @@ class IntroSection extends Component{
         }
         return(
           <div id='intro-section' className={`intro-section ${this.state.isVisible ? '' : 'hidden'}`}>
-            <p>sesfd</p>
+            <p className='test'>sesfd</p>
           </div>
         );
     }
