@@ -227,20 +227,6 @@
 
 /*========================== Intro Section ===========================*/
 .intro-section {
-  background-color: pink;
-  transition: background-color 2s ease-in-out;
-}
-
-.intro-section.hidden {
-  background-color: blue;
-}
-
-.intro-section p{
-  color: mediumpurple; 
-  font-size: 10vh;
-}
-
-#targeto {
   display: inline-block;
   position: absolute;
   text-align: center;
@@ -249,8 +235,26 @@
   top: 100vh;
   margin: 0px;
   z-index: 1;
+
+  background-color: transparent;
+  transition: background-color 1s ease-in-out;
 }
 
+.intro-section p{
+  color: mediumpurple; 
+  transition: color 1s ease-in-out;
+  font-size: 10vh;
+}
+
+
+.intro-section.hidden {
+  background-color: #F4F4F4;
+}
+
+.intro-section.hidden p{
+  color: yellow; 
+  font-size: 10vh;
+}
 
 /*========================== Skills Section ===========================*/
 .skills-section {

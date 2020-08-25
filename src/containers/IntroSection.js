@@ -21,10 +21,10 @@ class IntroSection extends Component{
         const intersectObserver = new IntersectionObserver(this.intersectHandler, {threshold: 0.1});
     
         window.onload = function(){
-            intersectObserver.observe(document.querySelector('#targeto'));
+            intersectObserver.observe(document.querySelector('#intro-section'));
         }
         return(
-          <div id='targeto' className={`intro-section ${this.state.isVisible ? '' : 'hidden'}`}>
+          <div id='intro-section' className={`intro-section ${this.state.isVisible ? '' : 'hidden'}`}>
             <p>sesfd</p>
           </div>
         );
