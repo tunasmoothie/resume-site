@@ -10,7 +10,17 @@ class IntroSection extends Component{
         }
     }
 
+    isVisible = false;
 
+    intersectHandler = (entries, options) =>{
+        entries.forEach(entry => {
+            if (entry.intersectionRatio > 0) {
+                console.log(this.isVisible);
+                this.isVisible = !this.isVisible;
+                this.setState({isVisible: this.isVisible}); 
+            } else {}
+        });
+    }
 
     render(){
         const intersectObserver = new IntersectionObserver(this.intersectHandler, {threshold: 0.1});
