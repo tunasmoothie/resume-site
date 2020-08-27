@@ -16,6 +16,7 @@ class TitleCard extends Component{
         window.removeEventListener('scroll', this.handleScroll)
       }
 
+      
     handleScroll = () => {
         if(window.pageYOffset < 200){
             this.setState({isVisible: 1})
